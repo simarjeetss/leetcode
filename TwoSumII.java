@@ -3,8 +3,8 @@ public class TwoSumII {
         int[] arr = {2,7,11,15};
         int target = 9;
         int[] res = twoSum(arr, target);
-        for(int i=0;i<res.length;i++){
-            System.out.print(res[i] + " ");
+        for(int i:res){
+            System.out.print(i + " ");
         }
     }
     public static int[] twoSum(int[] numbers, int target){
