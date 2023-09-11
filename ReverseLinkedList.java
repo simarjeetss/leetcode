@@ -7,10 +7,10 @@ public class ReverseLinkedList {
         ListNode curr = head;
         ListNode temp;
 
-        while(curr != null){                            //   null  1 -> 2 -> 3 -> 4 -> 5 -> null
-            temp = curr.next;                           //         p    c    t
-            curr.next = prev;                           //              p    c    t
-
+        while(curr != null){                            //         1 -> 2 -> 3 -> 4 -> 5 -> null
+            temp = curr.next;                           //         p <- c    t
+            curr.next = prev;                           //              p  <-c    t
+                                                        //         1 <- 2 <- 3 <- 4 <- 5
             prev = curr;
             curr = temp;
         }
